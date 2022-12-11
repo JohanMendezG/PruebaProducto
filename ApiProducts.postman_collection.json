@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "8225c31b-a1bf-4c18-b6c8-4446d6b31fca",
+		"name": "ApiProducts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24266775"
+	},
+	"item": [
+		{
+			"name": "GetProductList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7205/Product",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7205",
+					"path": [
+						"Product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProductById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7205/Product/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7205",
+					"path": [
+						"Product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Nombre\": \"Rollo Cinta\",\r\n    \"Peso\": \"30 gramos unidad\",\r\n    \"Cantidad\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7205/Product",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7205",
+					"path": [
+						"Product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProduct",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 1,\r\n    \"Nombre\": \"Bombillo\",\r\n    \"Peso\": \"25 gramos unidad\",\r\n    \"Cantidad\": 8\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7205/Product/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7205",
+					"path": [
+						"Product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7205/Product/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7205",
+					"path": [
+						"Product",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
